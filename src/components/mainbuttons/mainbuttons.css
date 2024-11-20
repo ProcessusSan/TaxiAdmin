@@ -1,4 +1,4 @@
-.bb {
+/* .bb {
     display: flex;
     color:#282828;
     line-height: 2;
@@ -20,8 +20,8 @@
     align-items: flex-start;
     background-color: #E8EED7;
     position: relative;
-    /* margin-left: 3%;
-    margin-right: 3%; */
+    margin-left: 3%;
+    margin-right: 3%;
     justify-content: center;
 }
 
@@ -60,4 +60,69 @@ button {
 
 .navMenuText {
     
+} */
+
+.navMenu {
+    display: flex;
+    width: 95%;
+    height: 90px;
+    border-bottom: 1px solid #506365;
+    margin-left: 2.5%;
+    justify-content: space-between;
+    padding-bottom: 29px;
+}
+
+.navMenuBtn {
+    border: none;
+    background: none;
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    height: 47px;
+    font-size: 24px;
+    width: 15%;
+}
+
+.navMenuBtn:hover {
+    color: #fff;
+    background: #506365;
+}
+
+@media only screen and (min-width: 1271px) and (max-width: 2000px) {
+    .navMenuBtn {
+        font-size: 20px;
+        width: 16%;
+        height: 56px;
+    }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1270px) {
+    .navMenuBtn {
+        font-size: 19px;
+        width: 18%;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+    .navMenuBtn {
+        font-size: 14px;
+        width: 20%;
+        height: 56px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+    .navMenuBtn {
+        font-size: 12px;
+        width: 21%;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navMenu {
+        padding-bottom: 20px;
+    }
 }

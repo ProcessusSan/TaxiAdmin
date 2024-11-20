@@ -1,0 +1,155 @@
+.manageStock {
+    margin-top: 107px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5%;
+    flex-direction: column;
+}
+
+.viewStock{
+    position: relative;
+    width: 80%;
+    height: 40px;
+    margin-left: 6%;
+}
+
+.viewBtnStock {
+    display: inline;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    border: none;
+    width: 153px;
+    height: 40px;
+    border-radius: 20px 20px 0 0;
+    background: var(--506365, #7A9E9F);
+    font-size: 24px;
+    color: #fff;
+}
+
+.viewBtnStockMini {
+    display: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 7px;
+    border: none;
+    width: 53px;
+    height: 40px;
+    border-radius: 20px 20px 0 0;
+    background: var(--506365, #7A9E9F);
+    font-size: 24px;
+    color: #fff;
+}
+
+.viewBtnStock:hover {
+    background: var(--color-1, #506365);
+}
+
+#helpRoad {
+    margin-left: 20px;
+}
+
+#textStock {
+    position: relative;
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;
+    border-radius: 20px;
+    resize: none;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 20%;
+    font-size: 19px;
+    border: none;
+}
+
+.switchStock {
+    position: absolute;
+    width: 50px;
+    height: 28px;
+    margin-left: 85%;
+    margin-bottom: 565px;
+}
+
+.switchStock input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-1, #506365);
+  -webkit-transition: .4s;
+  transition: .4s;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    top: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #78E87B;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #78E87B;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+  
+.slider.round {
+    border-radius: 24px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.accepStock {
+    position: relative;
+    width: 164px;
+    height: 48px;
+    border-radius: 20px;
+    background: #506365;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 84%;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1270px) {
+    .viewStock {
+        width: 80%;
+    }
+
+    .viewBtnStock {
+        display: none;
+    }
+
+    .viewBtnStockMini {
+        display: inline;
+    }
+
+    .accepStock {
+        margin-left: 70%;
+    }
+}
