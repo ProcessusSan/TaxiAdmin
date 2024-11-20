@@ -3,8 +3,9 @@ import './headadmin.css';
 
 export default function Headadmin() {
     return (
-        <div>
-            <p>Добро пожаловать Admin</p>
+        <div className="header_main">
+            <span className="welcome">Добро пожаловать</span>
+            <button className="logInBtn">Admin</button>
         </div>
     )
 }
